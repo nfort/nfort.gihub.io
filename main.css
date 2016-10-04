@@ -1,0 +1,68 @@
+h3, h6 {
+    color: #797979;
+}
+
+h6 {
+    margin-top: -2rem;
+}
+
+.wrapper {
+    background: linear-gradient(
+            to right,
+            #F6F6F6 0%,
+            #F6F6F6 50%,
+            #FFF 50%,
+            #FFF 100%
+    );
+    color: #797979;
+}
+
+.bio,
+.skills {
+    padding: 100px 0 0;
+}
+
+.bio {
+    text-align: right;
+}
+
+.skills {
+    text-align: left;
+}
+
+.experience {
+    max-width: 80%;
+    float: right;
+    margin: 0 0 20px 0;
+}
+
+.experience p {
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+
+.city-duration,
+.stage {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.info {
+    display: inline-flex;
+    margin: 0 0 50px 0;
+}
+
+.info .photo {
+    margin: 0 0 0 30px;
+}
+.icon { display: inline-block; margin: 0 0 0 10px}
+.icon-Github-black,.icon-Github-black\:regular{background-image:url('icons.svg');background-position:0 0;background-repeat:no-repeat}
+.icon-Github-black-dims{width:16px;height:16px}
+.icon-Google-black,.icon-Google-black\:regular{background-image:url('icons.svg');background-position:0 -16px;background-repeat:no-repeat}
+.icon-Google-black-dims{width:16px;height:16px}
+.icon-Skype-black,.icon-Skype-black\:regular{background-image:url('icons.svg');background-position:0 -32px;background-repeat:no-repeat}
+.icon-Skype-black-dims{width:17px;height:16px}
+.icon-Whatsapp-black,.icon-Whatsapp-black\:regular{background-image:url('icons.svg');background-position:0 -48px;background-repeat:no-repeat}
+.icon-Whatsapp-black-dims{width:16px;height:16px}
+.icon-stackoverflow-black,.icon-stackoverflow-black\:regular{background-image:url('icons.svg');background-position:0 -64px;background-repeat:no-repeat}
+.icon-stackoverflow-black-dims{width:13px;height:16px}
