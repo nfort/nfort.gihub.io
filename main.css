@@ -7,23 +7,18 @@ h6 {
 }
 
 .wrapper {
-    background: linear-gradient(
-            to right,
-            #F6F6F6 0%,
-            #F6F6F6 50%,
-            #FFF 50%,
-            #FFF 100%
-    );
+    background: #FFF;
     color: #797979;
+    padding: 0 10px;
 }
 
 .bio,
 .skills {
-    padding: 100px 0 0;
+    padding: 30px 0 0;
 }
 
 .bio {
-    text-align: right;
+    text-align: center;
 }
 
 .skills {
@@ -31,13 +26,11 @@ h6 {
 }
 
 .experience {
-    max-width: 80%;
-    float: right;
+    max-width: 100%;
     margin: 0 0 20px 0;
 }
 
 .experience p {
-    text-align: right;
     margin: 10px 0 0 0;
 }
 
@@ -66,3 +59,38 @@ h6 {
 .icon-Whatsapp-black-dims{width:16px;height:16px}
 .icon-stackoverflow-black,.icon-stackoverflow-black\:regular{background-image:url('icons.svg');background-position:0 -64px;background-repeat:no-repeat}
 .icon-stackoverflow-black-dims{width:13px;height:16px}
+
+@media (min-width: 550px) {
+    .wrapper {
+        background: linear-gradient(
+                to right,
+                #F6F6F6 0%,
+                #F6F6F6 50%,
+                #FFF 50%,
+                #FFF 100%
+        );
+        padding: 0;
+    }
+
+    .bio,
+    .skills {
+        padding: 100px 0 0;
+    }
+    
+    .bio {
+        text-align: right;
+    }
+
+    .skills {
+        text-align: left;
+    }
+
+    .experience {
+        max-width: 80%;
+        float: right;
+    }
+
+    .experience p {
+        text-align: right;
+    }
+}
