@@ -1,87 +1,120 @@
-h3, h6 {
-    color: #797979;
+html,
+body {
+  background-color: #323330;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-h6 {
-    margin-top: -2rem;
+.yellow {
+  color: #f0db4f;
 }
 
-.wrapper {
-    background: #FFF;
-    color: #797979;
-    padding: 0 10px;
+a {
+  color: #f0db4f;
+}
+a:hover {
+  color: #f0db1f;
 }
 
-.bio,
-.skills {
-    padding: 30px 0 0;
+body > header,
+body > footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.bio {
-    text-align: center;
+body > header::after {
+  content: "";
+  background-image: url("computer-mouse.svg");
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.skills {
-    text-align: left;
+body > header > div {
+  align-self: center;
 }
 
-.experience {
-    max-width: 100%;
-    margin: 0 0 20px 0;
+article > header {
+  font-size: 1.8rem;
 }
 
-.experience p {
-    margin: 10px 0 0 0;
-}
-
-.city-duration,
-.stage {
-    font-weight: 300;
-    font-style: italic;
+.chip {
+  float: right;
 }
 
 .info {
-    display: inline-flex;
-    margin: 0 0 50px 0;
+  color: grey;
 }
 
-.info .photo {
-    margin: 0 0 0 30px;
+main {
+  margin: 5rem auto;
 }
-.icon { display: inline-block; margin: 0 0 0 10px}
-.icon-Github-black,.icon-Github-black\:regular{background-image:url('icons.svg');background-position:0 0;background-repeat:no-repeat}
-.icon-Github-black-dims{width:16px;height:16px}
-.icon-Google-black,.icon-Google-black\:regular{background-image:url('icons.svg');background-position:0 -16px;background-repeat:no-repeat}
-.icon-Google-black-dims{width:16px;height:16px}
-.icon-Skype-black,.icon-Skype-black\:regular{background-image:url('icons.svg');background-position:0 -32px;background-repeat:no-repeat}
-.icon-Skype-black-dims{width:17px;height:16px}
-.icon-Whatsapp-black,.icon-Whatsapp-black\:regular{background-image:url('icons.svg');background-position:0 -48px;background-repeat:no-repeat}
-.icon-Whatsapp-black-dims{width:16px;height:16px}
-.icon-stackoverflow-black,.icon-stackoverflow-black\:regular{background-image:url('icons.svg');background-position:0 -64px;background-repeat:no-repeat}
-.icon-stackoverflow-black-dims{width:13px;height:16px}
 
+.openbank {
+  color: #007aff;
+}
+
+.alfa-bank {
+  color: #ef3124;
+}
+
+.gazprombank {
+  color: #3356d7;
+}
+
+article {
+  margin-bottom: 5rem;
+}
+
+/* Larger than mobile */
+@media (min-width: 300px) and (max-width: 389px) {
+  body > header::after {
+    bottom: 15px;
+  }
+
+  body > header,
+  main {
+    padding: 0 1rem;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 390px) {
+  body > header::after {
+    bottom: 25px;
+  }
+
+  body > header,
+  main {
+    padding: 0 1rem;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    .wrapper {
-        background: linear-gradient(
-                to right,
-                #F6F6F6 0%,
-                #F6F6F6 50%,
-                #FFF 50%,
-                #FFF 100%
-        );
-        padding: 0;
-    }
+  body > header,
+  main {
+    padding: 0 2rem;
+  }
+}
 
-    .bio,
-    .skills {
-        padding: 100px 0 0;
-    }
-    
-    .bio {
-        text-align: right;
-    }
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
 
-    .skills {
-        text-align: left;
-    }
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  body > header,
+  main {
+    width: 900px;
+    padding: 0;
+  }
 }
